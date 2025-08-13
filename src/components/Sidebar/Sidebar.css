@@ -1,0 +1,99 @@
+.sidebar {
+  width: 18%;
+  margin-top: 50px; /* below header on desktop */
+  min-height: calc(100vh - 50px);
+  border: 1.5px solid #a9a9a9;
+  border-top: 0;
+  font-size: max(1vw, 10px);
+}
+
+/* Sidebar options container */
+.sidebar-options {
+  padding-top: 50px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Sidebar link styles */
+.sidebar-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #a9a9a9;
+  border-right: 0;
+  padding: 8px 10px;
+  border-radius: 3px 0px 0px 3px;
+  cursor: pointer;
+}
+
+.sidebar-option.active {
+  background-color: #fff0ed;
+  border-color: tomato;
+}
+
+/* Toggle button hidden on desktop */
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 70px; /* just below header */
+  left: 10px;
+  z-index: 1001;
+  cursor: pointer;
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.sidebar-toggle img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Add margin between sidebar and content on desktop */
+.main-content {
+  margin-left: 18%;
+  padding: 20px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 70px; /* bigger margin below header */
+    width: 250px;
+    min-height: calc(100vh - 70px); /* adjust height */
+    background: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    margin-top: 0; /* prevent double margin */
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-toggle {
+    display: block;
+  }
+
+  /* Hide options by default on mobile */
+  .sidebar-options {
+    display: none;
+  }
+
+  .sidebar-options.show {
+    display: flex;
+  }
+
+  /* On mobile, push content down and give spacing */
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+    margin-top: 90px; /* extra breathing room under header & toggle */
+  }
+}

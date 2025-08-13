@@ -1,0 +1,66 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 1000;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navlinks {
+    display: flex;
+    gap: 15px;
+}
+
+.navlinks-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.profile {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: none; /* hidden on desktop */
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+    .navlinks {
+        display: none;
+        position: absolute;
+        top: 50px; /* below navbar */
+        right: 0;
+        background: white;
+        flex-direction: column;
+        width: 200px;
+        padding: 10px;
+        border-left: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .navlinks.show {
+        display: flex;
+    }
+
+    /* Hover over menu icon to show menu */
+    .profile:hover + .navlinks {
+        display: flex;
+    }
+
+    .profile {
+        display: block;
+    }
+}
