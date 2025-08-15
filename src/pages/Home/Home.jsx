@@ -87,14 +87,14 @@ const Home = () => {
       
       {/* Action Buttons */}
       <div className="action-buttons">
-        <button onClick={() => setOutput('የሐሙስ �ማት ይመልከቱ clicked')}>
-          የሐሙስ ልማት ይመልከቱ
+        <button onClick={() => setOutput('የሐሙስ ውዳሴ ማርያም በቅርቡ ይካተታል')}>
+          የሐሙስ ውዳሴ ማርያም ይመልከቱ
         </button>
-        <button onClick={() => setOutput('የሐሙስ ፍቅር ይመልከቱ clicked')}>
-          የሐሙስ ፍቅር ይመልከቱ
+        <button onClick={() => setOutput('የዕለቱን የቅዱሳን ታሪክ በቅርቡ ይካተታል')}>
+          የዕለቱን የቅዱሳን ታሪክ ይመልከቱ
         </button>
-        <button onClick={() => setOutput('የሐሙስ ግንዛቤ ይመልከቱ clicked')}>
-          የሐሙስ ግንዛቤ ይመልከቱ
+        <button onClick={() => setOutput('ለዕለቱ የተመረጡትን የመጽሐፍ ቅዱስ ክፍል  በቅርቡ ይካተታል')}>
+          ለዕለቱ የተመረጡትን የመጽሐፍ ቅዱስ ክፍል ይመልከቱ
         </button>
       </div>
       
