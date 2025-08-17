@@ -61,7 +61,8 @@ p {
   cursor: not-allowed;
 }
 
-.loading, .error {
+.loading,
+.error {
   text-align: center;
   padding: 1rem;
   margin: 1rem 0;
@@ -191,6 +192,8 @@ p {
   margin-top: 1.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-section {
@@ -219,41 +222,41 @@ p {
   .sinksar-container {
     padding: 1.5rem;
   }
-  
+
   .month-container {
     gap: 8px;
   }
-  
+
   .month-btn {
     padding: 10px 15px;
     font-size: 0.9rem;
   }
-  
+
   .days-container {
     grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
     gap: 8px;
     padding: 1rem;
   }
-  
+
   .day-btn {
     padding: 10px 0;
     font-size: 0.9rem;
   }
-  
+
   .navigation-controls {
     flex-direction: column;
   }
-  
+
   .nav-btn-group {
     width: 100%;
     justify-content: center;
   }
-  
+
   .nav-btn {
     flex-grow: 1;
     justify-content: center;
   }
-  
+
   .date-info {
     order: -1;
     width: 100%;
