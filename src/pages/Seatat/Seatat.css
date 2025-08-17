@@ -1,0 +1,46 @@
+.seatat {
+    margin-top: 35px;
+    padding-top: 20px;
+    padding-left: 12px;
+}
+
+.seatat .top, .seatat .bottom {
+  color: #656565;
+  font-size: larger;
+  background-color: #f3eeee;
+  font-weight: 600;
+  padding: 12px;
+}
+.content {
+    display: flex;
+    width: 100%;
+}
+
+.left-links {
+    display: flex;
+    width: 30%;
+    float: left;
+}
+
+.right-content {
+    width: 65%;
+    float: right;
+}
+
+.list-items {
+    list-style: none;
+    background-color: #d5cecc;
+    color: black;
+    font-weight: 600;
+    padding: 12px;
+}
+
+.list-item {
+    padding: 6px;
+    color: #656565;
+    cursor: pointer;
+}
+
+.list-item:hover {
+    color: tomato;
+}

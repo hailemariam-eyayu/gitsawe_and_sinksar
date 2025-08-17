@@ -7,6 +7,7 @@ import upload_area from './upload_area.png'
 import parcel_icon from './parcel_icon.png'
 import facebook_icon  from './facebook_icon.png'
 import twitter_icon  from './twitter_icon.png'
+import menu_icon from '../menu_icon.png'
 
 export const assets ={
     logo,
@@ -17,7 +18,8 @@ export const assets ={
     parcel_icon,
     facebook_icon,
     twitter_icon,
-    linkedin_icon
+    linkedin_icon,
+    menu_icon
 }
 
 export const url = 'http://localhost:5000'

@@ -3,8 +3,8 @@ import './Bible.css'
 
 const Bible = () => {
   return (
-    <div>
-      Bible
+    <div className='bible'>
+      Bible Content will be displayed here!
     </div>
   )
 }

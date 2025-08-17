@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <div className='header'>
-     Well Come!
+     እንኳን ደኅና መጡ!
     </div>
   );
 };

@@ -20,12 +20,13 @@ const Sidebar = () => {
       {/* Sidebar */}
       <div className={`sidebar ${isOpen ? 'open' : ''}`}>
         <div className={`sidebar-options ${isOpen ? 'show' : ''}`}>
-          <NavLink className="sidebar-option" to="/sinksar">Sinksar</NavLink>
-          <NavLink className="sidebar-option" to="/bahirehasab">Bahire Hasab</NavLink>
-          <NavLink className="sidebar-option" to="/gitsawie">Gitsawe</NavLink>
-          <NavLink className="sidebar-option" to="/wudasie">Wudasie Maryam</NavLink>
-          <NavLink className="sidebar-option" to="/bible">Bible</NavLink>
-          <NavLink className="sidebar-option" to="/seatat">Seatat</NavLink>
+          <NavLink className="sidebar-option" to="/sinksar">ስንክሳር</NavLink>
+          <NavLink className="sidebar-option" to="/bahirehasab">ባሕረ ሃሳብ</NavLink>
+          <NavLink className="sidebar-option" to="/gitsawie">ግጻዌ</NavLink>
+          <NavLink className="sidebar-option" to="/wudasie">ቅዳሴ ማርያም</NavLink>
+          <NavLink className="sidebar-option" to="/bible">መጽሐፍ ቅዱስ</NavLink>
+          <NavLink className="sidebar-option" to="/seatat">ሰአታት</NavLink>
+          <NavLink className='sidebar-option' to="/hibuat">በእንተ ትምኅርተ ኅቡዓት</NavLink>
         </div>
       </div>
     </>

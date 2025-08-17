@@ -64,23 +64,23 @@ const Home = () => {
       <div className="calendar-section">
         <div className="date-row">
           <div className="calendar-card">
-            <div className="calendar-label">Gregorian Calendar (GC)</div>
+            <div className="calendar-label">Gregorian Calendar (GC) በግሪጎርያን አቆጣጠር</div>
             <div className="calendar-value">{gcDateStr}</div>
           </div>
           
           <div className="day-center">
-            <div className="day-label">Day of Week</div>
+            <div className="day-label">ዕለቱ/ Day</div>
             <div className="day-value">{ecDayOfWeek}</div>
           </div>
           
           <div className="calendar-card">
-            <div className="calendar-label">Ethiopian Calendar (EC)</div>
+            <div className="calendar-label">Ethiopian Calendar (EC) የኢትዮጵያ አቆጣጠር</div>
             <div className="calendar-value">{ecDateStr}</div>
           </div>
         </div>
         
         <div className="time-row">
-          <div className="time-label">Current Time</div>
+          <div className="time-label">ሰዓት</div>
           <div className="time-value">{gcTimeStr}</div>
         </div>
       </div>
