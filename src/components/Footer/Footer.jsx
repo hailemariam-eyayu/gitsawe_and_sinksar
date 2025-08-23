@@ -21,8 +21,8 @@ const Footer = () => {
                     </p>
                     <div className="footer-social-icons">
                         <a href="https://web.facebook.com/hailemariam.eyayu.3/"><img src={assets.facebook_icon} alt="Facebook" /></a>
-                        <a href="#"><img src={assets.twitter_icon} alt="Twitter" /></a>
-                        <a href=""><img src={assets.WhatsApp} alt="WhatsApp" /></a>
+                        <a href="https://twitter.com/Hailemariam1994"><img src={assets.twitter_icon} alt="Twitter" /></a>
+                        <a href="https://wa.me/251938169557"><img src={assets.WhatsApp} alt="WhatsApp" /></a>
                         <a href="https://t.me/HaileEden"><img src={assets.telegram_icon} alt="Telegram" /></a>
                         <a href="https://www.linkedin.com/in/hailemariam-eyayu/"><img src={assets.linkedin_icon} alt="Linkedin" /></a>
                     </div>
