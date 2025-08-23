@@ -56,7 +56,7 @@ const Sidebar = () => {
           
           <NavLink className="sidebar-option" to="/wudasie" onClick={() => setIsOpen(false)}>
             <span className="option-icon">🙏</span>
-            <span className="option-text">ቅዳሴ ማርያም</span>
+            <span className="option-text">ውዳሴ ማርያም</span>
           </NavLink>
           
           <NavLink className="sidebar-option" to="/bible" onClick={() => setIsOpen(false)}>
