@@ -5,59 +5,54 @@ import { assets } from "../../assets/admin_assets/assets.js";
 const Footer = () => {
     return (
         <div className="footer" id="footer">
-            <div className="footer-wave">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#323232" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,154.7C384,149,480,107,576,112C672,117,768,171,864,197.3C960,224,1056,224,1152,208C1248,192,1344,160,1392,144L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-                </svg>
-            </div>
-            
             <div className="footer-content">
                 <div className="footer-content-left">
                     <div className="logo-container">
                         <img src={assets.logo} alt="E-Gitsawe Logo" />
                         <div className="logo-text">
-                            <span>E-Gitsawe</span>
-                            <span>& Sinksar</span>
+                            <span className="amharic-title">ኢ-ግጻዌ</span>
+                            <span className="amharic-subtitle">እና ስንክሳር</span>
                         </div>
                     </div>
-                    <p>
-                        Your digital gateway to Ethiopian Orthodox Tewahedo Church traditions. 
-                        Explore liturgical calendars, sacred texts, and spiritual resources 
-                        designed to deepen your faith journey.
+                    <p className="footer-description">
+                        የኢትዮጵያ ኦርቶዶክስ ተዋህዶ ቤተክርስቲያን የዲጂታል መጽሐፍት 
+                        ቤት። የሊተርጂካል የቀን መቁጠሪያ፣ የቅዱሳን ዜመናት፣ 
+                        የጸሎት ሰዓታት እና መፅሐፍ ቅዱሳዊ ምንጮች።
                     </p>
                     <div className="footer-social-icons">
-                        <a href="#"><img src={assets.facebook_icon} alt="Facebook" /></a>
+                        <a href="https://web.facebook.com/hailemariam.eyayu.3/"><img src={assets.facebook_icon} alt="Facebook" /></a>
                         <a href="#"><img src={assets.twitter_icon} alt="Twitter" /></a>
-                        <a href="#"><img src={assets.linkedin_icon} alt="LinkedIn" /></a>
-                        <a href="#"><img src={assets.instagram_icon} alt="Instagram" /></a>
+                        <a href=""><img src={assets.WhatsApp} alt="WhatsApp" /></a>
+                        <a href="https://t.me/HaileEden"><img src={assets.telegram_icon} alt="Telegram" /></a>
+                        <a href="https://www.linkedin.com/in/hailemariam-eyayu/"><img src={assets.linkedin_icon} alt="Linkedin" /></a>
                     </div>
                 </div>
 
                 <div className="footer-content-center">
-                    <h2>Company</h2>
+                    <h2 className="section-title">ፈጣን አገናኞች</h2>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">መግቢያ</a></li>
+                        <li><a href="#">ስለ እኛ</a></li>
+                        <li><a href="#">ጸሎቶች</a></li>
+                        <li><a href="#">የጥበቃ መመሪያ</a></li>
+                        <li><a href="#">የአገልግሎት ውሎች</a></li>
                     </ul>
                 </div>
 
                 <div className="footer-content-center">
-                    <h2>Resources</h2>
+                    <h2 className="section-title">መርጃዎች</h2>
                     <ul>
-                        <li><a href="#">Liturgical Calendar</a></li>
-                        <li><a href="#">Daily Readings</a></li>
-                        <li><a href="#">Prayer Times</a></li>
-                        <li><a href="#">Saints of the Day</a></li>
-                        <li><a href="#">Spiritual Guidance</a></li>
+                        <li><a href="#">የሊተርጂካል የቀን መቁጠሪያ</a></li>
+                        <li><a href="#">ዕለታዊ ንባቦች</a></li>
+                        <li><a href="#">የጸሎት ሰዓታት</a></li>
+                        <li><a href="#">የዕለት ቅዱሳን</a></li>
+                        <li><a href="#">መንፈሳዊ ማጠናከሪያ</a></li>
                     </ul>
                 </div>
 
                 <div className="footer-content-right">
-                    <h2>Get In Touch</h2>
-                    <ul>
+                    <h2 className="section-title">አግኙን</h2>
+                    <ul className="contact-info">
                         <li>
                             <img src={assets.phone_icon} alt="Phone" />
                             <span>+251-938169557</span>
@@ -68,27 +63,27 @@ const Footer = () => {
                         </li>
                         <li>
                             <img src={assets.location_icon} alt="Location" />
-                            <span>Addis Ababa, Ethiopia</span>
+                            <span>አዲስ አበባ, ኢትዮጵያ</span>
                         </li>
                     </ul>
-                    <div className="newsletter">
-                        <h3>Subscribe to Newsletter</h3>
-                        <div className="newsletter-input">
-                            <input type="email" placeholder="Your email address" />
-                            <button>Subscribe</button>
-                        </div>
+                    <div className="prayer-request">
+                        <h3>በጸሎት አስቡኝ</h3>
+                        <p> ገብረ ጊዮርጊስ!</p>
+                        <button className="prayer-button">አትርሱኝ</button>
                     </div>
                 </div>
             </div>
-            <hr />
+            
+            <div className="footer-divider">
+                <div className="cross-icon">✝</div>
+            </div>
+            
             <div className="footer-bottom">
                 <p className="footer-copyright">
-                    Copyright © 2017 E.C e-gitsawe_and_sinksar.com. All Rights Reserved.
+                    መብቱ በህግ የተጠበቀ © 2017 ዓ.ም ኢ-ግጻዌ_እና_ስንክሳር.ግጻዌ.ሁሉም መብቶች የተጠበቁ ናቸው
                 </p>
-                <div className="footer-payments">
-                    <img src={assets.visa_icon} alt="Visa" />
-                    <img src={assets.mastercard_icon} alt="Mastercard" />
-                    <img src={assets.paypal_icon} alt="PayPal" />
+                <div className="footer-blessing">
+                    <span>ተዘከረነ እግዚኦ በውስተ መንግሥትከ።</span>
                 </div>
             </div>
         </div>

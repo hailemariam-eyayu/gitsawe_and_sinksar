@@ -10,23 +10,73 @@ const Sidebar = () => {
     setIsOpen(!isOpen);
   };
 
+  // Close sidebar when clicking outside on mobile
+  const handleOverlayClick = () => {
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  };
+
   return (
     <>
       {/* Toggle button - visible only on mobile */}
-      <div className="sidebar-toggle sidebar-options" onClick={toggleSidebar}>
-        <img src={assets.menu_icon} alt="menu" />
+      <div className="sidebar-toggle" onClick={toggleSidebar}>
+        <div className={`hamburger ${isOpen ? 'open' : ''}`}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
+
+      {/* Overlay for mobile */}
+      {isOpen && <div className="sidebar-overlay" onClick={handleOverlayClick}></div>}
 
       {/* Sidebar */}
       <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-        <div className={`sidebar-options ${isOpen ? 'show' : ''}`}>
-          <NavLink className="sidebar-option" to="/sinksar">ስንክሳር</NavLink>
-          <NavLink className="sidebar-option" to="/bahirehasab">ባሕረ ሃሳብ</NavLink>
-          <NavLink className="sidebar-option" to="/gitsawie">ግጻዌ</NavLink>
-          <NavLink className="sidebar-option" to="/wudasie">ቅዳሴ ማርያም</NavLink>
-          <NavLink className="sidebar-option" to="/bible">መጽሐፍ ቅዱስ</NavLink>
-          <NavLink className="sidebar-option" to="/seatat">ሰአታት</NavLink>
-          <NavLink className='sidebar-option' to="/hibuat">በእንተ ትምኅርተ ኅቡዓት</NavLink>
+        <div className="sidebar-header">
+          <h3>የኢትዮጵያ ኦርቶዶክስ ተዋህዶ</h3>
+          <p>የክርስቲያን ሥነ ጽሑፍ መጽሐፍት</p>
+        </div>
+        
+        <div className="sidebar-options">
+          <NavLink className="sidebar-option" to="/sinksar" onClick={() => setIsOpen(false)}>
+            <span className="option-icon">📖</span>
+            <span className="option-text">ስንክሳር</span>
+          </NavLink>
+          
+          <NavLink className="sidebar-option" to="/bahirehasab" onClick={() => setIsOpen(false)}>
+            <span className="option-icon">📅</span>
+            <span className="option-text">ባሕረ ሃሳብ</span>
+          </NavLink>
+          
+          <NavLink className="sidebar-option" to="/gitsawie" onClick={() => setIsOpen(false)}>
+            <span className="option-icon">✝️</span>
+            <span className="option-text">ግጻዌ</span>
+          </NavLink>
+          
+          <NavLink className="sidebar-option" to="/wudasie" onClick={() => setIsOpen(false)}>
+            <span className="option-icon">🙏</span>
+            <span className="option-text">ቅዳሴ ማርያም</span>
+          </NavLink>
+          
+          <NavLink className="sidebar-option" to="/bible" onClick={() => setIsOpen(false)}>
+            <span className="option-icon">📚</span>
+            <span className="option-text">መጽሐፍ ቅዱስ</span>
+          </NavLink>
+          
+          <NavLink className="sidebar-option" to="/seatat" onClick={() => setIsOpen(false)}>
+            <span className="option-icon">⏰</span>
+            <span className="option-text">ሰአታት</span>
+          </NavLink>
+          
+          <NavLink className="sidebar-option" to="/hibuat" onClick={() => setIsOpen(false)}>
+            <span className="option-icon">👥</span>
+            <span className="option-text">በእንተ ትምኅርተ ኅቡዓት</span>
+          </NavLink>
+        </div>
+        
+        <div className="sidebar-footer">
+          <p>እግዚአብሔር ይባርክ</p>
         </div>
       </div>
     </>

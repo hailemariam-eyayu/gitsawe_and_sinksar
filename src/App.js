@@ -16,25 +16,32 @@ import Seatat from "./pages/Seatat/Seatat";
 import Home from "./pages/Home/Home";
 import Hibuat from "./pages/Hibuat/Hibuat";
 
+// Import the CSS for the layout
+import './App.css';
+
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <ToastContainer />
       <Navbar />
-      <hr />
-      <div className="app-content">
+      
+      <div className="app-body">
         <Sidebar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sinksar" element={<Sinksar />} />
-          <Route path="/bahirehasab" element={<BahireHasab />} />
-          <Route path="/gitsawie" element={<Gitsawe />} />
-          <Route path="/bible" element={<Bible />} />
-          <Route path="/wudasie" element={<WudasieMariam />} />
-          <Route path="/seatat" element={<Seatat />} />
-          <Route path="/hibuat" element={<Hibuat />} />
-        </Routes>
+        
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/sinksar" element={<Sinksar />} />
+            <Route path="/bahirehasab" element={<BahireHasab />} />
+            <Route path="/gitsawie" element={<Gitsawe />} />
+            <Route path="/bible" element={<Bible />} />
+            <Route path="/wudasie" element={<WudasieMariam />} />
+            <Route path="/seatat" element={<Seatat />} />
+            <Route path="/hibuat" element={<Hibuat />} />
+          </Routes>
+        </div>
       </div>
+      
       <Footer />
     </div>
   );
