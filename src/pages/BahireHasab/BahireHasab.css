@@ -1,23 +1,43 @@
 .bahire-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #2c3e50;
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+  min-height: 100vh;
+}
+
+.bahire-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, #2c3e50 0%, #4a6491 100%);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .title {
-  text-align: center;
-  color: #2c3e50;
-  margin-bottom: 25px;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #f1c40f;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
 }
 
 .input-section {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 25px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e6ed;
 }
 
 .date-input {
@@ -29,97 +49,219 @@
 
 .date-input label {
   font-weight: bold;
-  min-width: 120px;
+  min-width: 150px;
+  font-size: 1.1rem;
+  color: #2c3e50;
 }
 
 .date-input input {
   flex: 1;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
   font-size: 16px;
   min-width: 200px;
+  transition: border-color 0.3s;
 }
 
-.date-input button {
-  background-color: #4CAF50;
+.date-input input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.convert-btn {
+  background: linear-gradient(to right, #2c3e50, #4a6491);
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
+  padding: 12px 25px;
+  border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.date-input button:hover {
-  background-color: #388E3C;
+.convert-btn:hover {
+  background: linear-gradient(to right, #4a6491, #2c3e50);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-icon {
+  font-size: 1.2rem;
 }
 
 .result-section {
-  background-color: #e8f5e9;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 25px;
+  background: linear-gradient(to right, #e8f5e9, #c8e6c9);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.2rem;
+  border-left: 5px solid #4CAF50;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ethiopian-date {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 10px 0 0;
 }
 
 .results-container {
   background-color: #fff;
-  border-radius: 8px;
-  padding: 25px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
-.results-container h3 {
+.results-header {
   text-align: center;
-  color: #2c3e50;
-  border-bottom: 2px solid #4CAF50;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e74c3c;
 }
 
-.result-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 20px;
-  border-bottom: 1px dashed #eee;
-  padding-bottom: 15px;
+.results-header h3 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.decoration {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 2rem;
+  color: #e74c3c;
+  opacity: 0.3;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.result-category {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.result-category h4 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.2rem;
 }
 
 .result-item {
-  flex: 1;
-  min-width: 300px;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  background-color: #f8f9fa;
-  border-radius: 4px;
+  padding: 10px 0;
+  border-bottom: 1px dashed #e0e6ed;
+}
+
+.result-item:last-child {
+  border-bottom: none;
 }
 
 .result-label {
   font-weight: bold;
-  color: #4CAF50;
+  color: #2c3e50;
+  flex: 1;
 }
 
 .result-value {
-  text-align: right;
-  font-family: monospace;
+  text-align: left;
+  font-family: 'Courier New', monospace;
+  color: #e74c3c;
+  flex: 1;
+  margin-left: 15px;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
+  .bahire-container {
+    padding: 15px;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
   .date-input {
     flex-direction: column;
     align-items: stretch;
   }
   
-  .result-group {
-    flex-direction: column;
+  .date-input label {
+    min-width: auto;
+    margin-bottom: 5px;
+  }
+  
+  .results-grid {
+    grid-template-columns: 1fr;
   }
   
   .result-item {
-    min-width: 100%;
+    flex-direction: column;
   }
+  
+  .result-value {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+  
+  .convert-btn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-section,
+  .results-container {
+    padding: 15px;
+  }
+  
+  .result-category {
+    padding: 15px;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Animation for results */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-section,
+.results-container {
+  animation: fadeIn 0.5s ease;
 }

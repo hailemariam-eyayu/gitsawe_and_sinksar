@@ -1,4 +1,3 @@
-// BahireHasab.jsx
 import React, { useState } from "react";
 import "./BahireHasab.css";
 
@@ -128,23 +127,21 @@ export default function BahireHasab() {
 
     // Calculate BMT
     let BMT, bmt;
-    let tewsakDay; // declare here
+    let tewsakDay;
 
     if (Metqie >= 15) {
       BMT = (30 + Metqie) % 30;
       if (BMT === 0) BMT = 30;
       const Mtday = getWeekday(BMT, 1, toSep);
-      tewsakDay = getWeekT(BMT, 1, toSep); // assign here
-
+      tewsakDay = getWeekT(BMT, 1, toSep);
       bmt = `ቀኑ፡ መስከረም / ${BMT} / ${year} - ${Mtday}`;
     } else {
       BMT = Metqie % 30;
       const Mtday = getWeekday(BMT, 2, toSep);
-      tewsakDay = getWeekT(BMT, 2, toSep); // assign here
+      tewsakDay = getWeekT(BMT, 2, toSep);
       bmt = `ቀኑ፡ ጥቅምት / ${BMT} / ${year} - ${Mtday}`;
     }
 
-    // Now tewsakDay is visible here
     const MebajaHamer = (BMT + tewsakDay) % 30 || 30;
 
     // Calculate other values
@@ -197,7 +194,10 @@ export default function BahireHasab() {
 
   return (
     <div className="bahire-container">
-      <h2 className="title">G.C → E.C + ባሕረ ሐሳብ</h2>
+      <div className="bahire-header">
+        <h2 className="title">ግሪጎርያን → ኢትዮጵያ + ባሕረ ሐሳብ</h2>
+        <p className="subtitle">የኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን የቀን መቁጠሪያ መለወጫ</p>
+      </div>
 
       <div className="input-section">
         <div className="date-input">
@@ -207,68 +207,75 @@ export default function BahireHasab() {
             value={gregorianDate}
             onChange={(e) => setGregorianDate(e.target.value)}
           />
-          <button onClick={handleConvert}>አስላ</button>
+          <button onClick={handleConvert} className="convert-btn">
+            <span className="btn-icon">📅</span> አስላ
+          </button>
         </div>
       </div>
 
       {ethiopianDate && (
         <div className="result-section">
           <h3>የኢትዮጵያ ቀን:</h3>
-          <p>{ethiopianDate.day}/{ethiopianDate.month}/{ethiopianDate.year}</p>
+          <p className="ethiopian-date">{ethiopianDate.day}/{ethiopianDate.month}/{ethiopianDate.year}</p>
         </div>
       )}
 
       {results && (
         <div className="results-container">
-          <h3>የባሕረ ሐሳብ ውጤቶች:</h3>
-
-          <div className="result-group">
-            {renderResultItem('ወንበር:', results.wenber1)}
-            {renderResultItem('አበቅቴ:', results.Abeqtie)}
-            {renderResultItem('መጥቅዕ:', results.Metqie)}
-            {renderResultItem('መባጃ ሐመር:', results.MebajaHamer)}
+          <div className="results-header">
+            <h3>የባሕረ ሐሳብ ውጤቶች</h3>
+            <div className="decoration">✝</div>
           </div>
 
-          <div className="result-group">
-            {renderResultItem('ሠርቀ ለሊት:', results.Lelit)}
-            {renderResultItem('ሠርቀ ወርኅ:', results.Werih)}
-            {renderResultItem('ሠርቀ መዐልት:', results.Mealt)}
-            {renderResultItem('ሠርቀ ዕለት:', results.Ilet)}
-          </div>
+          <div className="results-grid">
+            <div className="result-category">
+              <h4>መሰረታዊ ስሌቶች</h4>
+              {renderResultItem('ወንበር:', results.wenber1)}
+              {renderResultItem('አበቅቴ:', results.Abeqtie)}
+              {renderResultItem('መጥቅዕ:', results.Metqie)}
+              {renderResultItem('መባጃ ሐመር:', results.MebajaHamer)}
+            </div>
 
-          <div className="result-group">
-            {renderResultItem('ወንጌል:', results.leapYearName)}
-            {renderResultItem('መስከረም 1:', results.sep1)}
-            {renderResultItem('በዓለ መጥቅዕ:', results.bmt)}
-          </div>
+            <div className="result-category">
+              <h4>የሰዓት ስሌቶች</h4>
+              {renderResultItem('ሠርቀ ለሊት:', results.Lelit)}
+              {renderResultItem('ሠርቀ ወርኅ:', results.Werih)}
+              {renderResultItem('ሠርቀ መዐልት:', results.Mealt)}
+              {renderResultItem('ሠርቀ ዕለት:', results.Ilet)}
+            </div>
 
-          <div className="result-group">
-            {renderResultItem('ነነዌ:', results.nn)}
-            {renderResultItem('አብይ ጾም:', results.ay)}
-            {renderResultItem('ደብረ ዘይት:', results.dz)}
-          </div>
+            <div className="result-category">
+              <h4>ዓመት እና ቀን</h4>
+              {renderResultItem('ወንጌል:', results.leapYearName)}
+              {renderResultItem('መስከረም 1:', results.sep1)}
+              {renderResultItem('በዓለ መጥቅዕ:', results.bmt)}
+            </div>
 
-          <div className="result-group">
-            {renderResultItem('ሆሣዕና:', results.hn)}
-            {renderResultItem('ስቅለት:', results.st)}
-            {renderResultItem('ትንሳኤ:', results.ta)}
-          </div>
+            <div className="result-category">
+              <h4>ጾሞች እና በዓላት</h4>
+              {renderResultItem('ነነዌ:', results.nn)}
+              {renderResultItem('አብይ ጾም:', results.ay)}
+              {renderResultItem('ጾመ ሐዋርያት:', results.hw)}
+              {renderResultItem('ጾመ ድኅነት:', results.dt)}
+            </div>
 
-          <div className="result-group">
-            {renderResultItem('ርክበ ካህናት:', results.rc)}
-            {renderResultItem('ዕርገት:', results.it)}
-            {renderResultItem('ጰራቅሊጦስ:', results.ps)}
-          </div>
+            <div className="result-category">
+              <h4>ተጨማሪ በዓላት</h4>
+              {renderResultItem('ደብረ ዘይት:', results.dz)}
+              {renderResultItem('ሆሣዕና:', results.hn)}
+              {renderResultItem('ስቅለት:', results.st)}
+              {renderResultItem('ትንሳኤ:', results.ta)}
+              {renderResultItem('ርክበ ካህናት:', results.rc)}
+              {renderResultItem('ዕርገት:', results.it)}
+              {renderResultItem('ጰራቅሊጦስ:', results.ps)}
+            </div>
 
-          <div className="result-group">
-            {renderResultItem('ጾመ ሐዋርያት:', results.hw)}
-            {renderResultItem('ጾመ ድኅነት:', results.dt)}
-            {renderResultItem('ጥምቀት:', results.tir)}
-          </div>
-
-          <div className="result-group">
-            {renderResultItem('መስከረም 17:', results.sep17)}
-            {renderResultItem('መጋቢት 29:', results.meg)}
+            <div className="result-category">
+              <h4>ሌሎች ቀናት</h4>
+              {renderResultItem('መስከረም 17:', results.sep17)}
+              {renderResultItem('መጋቢት 29:', results.meg)}
+              {renderResultItem('ጥምቀት:', results.tir)}
+            </div>
           </div>
         </div>
       )}
