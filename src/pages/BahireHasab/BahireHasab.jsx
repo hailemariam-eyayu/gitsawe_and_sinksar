@@ -86,8 +86,8 @@ export default function BahireHasab() {
 
     const isLeapYear = (y) => (y + 5500) % 4 === 3;
 
-    const addEthiopianDays = (year, month, day, daysToAdd) => {
-      let totalDays = (month - 1) * 30 + day;
+    const addEthiopianDays = (year, month, day, daysToAdd) => { // 2018,6,25,0
+      let totalDays = (month - 1) * 30 + day; //
 
       // Handle Pagume
       if (month > 12) {
@@ -151,7 +151,7 @@ export default function BahireHasab() {
 
     // Calculate holidays
     const calculateHoliday = (daysToAdd) => {
-      return addEthiopianDays(year, 6, MebajaHamer, daysToAdd);
+      return addEthiopianDays(year, 5, MebajaHamer, daysToAdd);
     };
 
     return {
@@ -178,9 +178,10 @@ export default function BahireHasab() {
       ps: `${calculateHoliday(118)}: እሁድ`,
       hw: `${calculateHoliday(119)}: ሰኞ`,
       dt: `${calculateHoliday(121)}: ረቡዕ`,
-      tir: getDay(21, 5, toSep),
-      sep17: getDay(17, 1, toSep),
-      meg: getDay(29, 6, toSep)
+      // tir: getDay(21, 5, toSep),
+      tir: `ጥር 1: ${getWeekday(21, 5, toSep)}`,
+      sep17: getWeekday(17, 1, toSep),
+      meg: getWeekday(29, 6, toSep)
     };
   };
 
