@@ -966,7 +966,6 @@ const mockSinksarData = {
       },
       // ... other days
     ],
-
   }
 
   // ... other months
