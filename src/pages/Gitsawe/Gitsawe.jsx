@@ -808,6 +808,371 @@ const mockGitsaweData = {
                     { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
                 ]
             },
+             {
+                id: 2,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 3,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 4,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            }, {
+                id: 5,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 6,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            }, {
+                id: 7,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 8,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            }, {
+                id: 9,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 10,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            }, {
+                id: 11,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 12,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            }, {
+                id: 13,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 14,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            }, {
+                id: 15,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 16,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            }, {
+                id: 17,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 18,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            }, {
+                id: 19,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 20,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            }, {
+                id: 21,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 22,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            }, {
+                id: 23,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 24,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            }, {
+                id: 25,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 26,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            }, {
+                id: 27,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 28,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 29,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
+            {
+                id: 30,
+                title: "Hidar 30",
+                content: [
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "", main: "" },
+                    { title: "ምስባክ", main: "" },
+                    { title: "ትርጉም", main: "" },
+                    { title: "ወንጌል", main: "" },
+                    { title: "ቅዳሴ", main: "ዲዮስቆሮስ ቅዳሴ ነው።" }
+                ]
+            },
 
             // ... other days
         ],

@@ -1,10 +1,18 @@
-.hibuat{
+.hibuat {
     margin-top: 35px;
     padding-top: 20px;
     padding-left: 12px;
 }
 
-.hibuat .lang{
-    display: grid;
-    grid-template-columns: row;
+.hibuat .lang {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-self: flex-start;
+    background-color: antiquewhite;
+    padding: 18px;
+}
+
+.hibuat .lang p {
+    font: 22px Solid green;
 }
